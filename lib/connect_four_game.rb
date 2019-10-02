@@ -75,7 +75,6 @@ class Game
       puts "#{@current_turn.name}, make your choice. Enter the number of column from 1 to 7"
       current_choice = gets.chomp.to_i
       current_choice = check(current_choice)
-      puts current_choice
       
       while @board.cells["6#{current_choice}"].color != WHITE
         puts "This column is full. Choose the other one."
@@ -152,3 +151,6 @@ class Game
     end
   end
 end
+
+game = Game.new()
+game.start
