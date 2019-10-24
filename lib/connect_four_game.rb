@@ -68,6 +68,7 @@ class Game
     puts "Hi, #{@player2.name}. You will be playing with red dots"
     @board = Board.new
     puts "Lets start to play"
+    @board.show_board
   end
   
   def start
